@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PadariaApp</string>
+    <string name="acessar_legenda_inicial">Olá! Para Continuar, Digite seu Email e Senha</string>
+    <string name="acessar_hint_user">Digite o Email ou Usuario</string>
+    <string name="acessar_hint_senha">Digite a Senha</string>
+    <string name="acessar_btn_continuar">Continuar</string>
+    <string name="acessar_criarConta">Criar Conta</string>
+    <string name="cadastro_info">Complete seus Dados</string>
+    <string name="cadastro_senha">Use entre 6 e 20 caracteres</string>
+    <string name="cadastro_email">nome@exemplo.com</string>
+    <string name="cadastro_info_nome">Nome</string>
+    <string name="cadastro_info_sobrenome">Sobrenome</string>
+    <string name="cadastro_info_email">Email</string>
+    <string name="cadastro_info_senha">Senha</string>
+    <string name="cadastro_cadastro">Cadastrar-me</string>
+    <string name="main_categorias">Categorias de Pesquisa</string>
+<string name="main_recomendados">Recomendados</string>
+    <string name="main_prod_tortas">Tortas</string>
+    <string name="main_prod_salgado">Salgado</string>
+    <string name="main_prod_paes">Paes</string>
+    <string name="main_prod_doces">Doces</string>
+</resources>
