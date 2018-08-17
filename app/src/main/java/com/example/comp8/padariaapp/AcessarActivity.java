@@ -2,6 +2,8 @@ package com.example.comp8.padariaapp;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -34,6 +36,15 @@ public class AcessarActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(AcessarActivity.this, "Autenticando", Toast.LENGTH_SHORT).show();
                 if (log_user.getText().toString().matches("admin") && (log_senha.getText().toString().matches("admin"))) {
+                    Intent it = new Intent(AcessarActivity.this, mainActivity.class);
+                    startActivity(it);
+                }
+                SharedPreferences preferences =
+                        PreferenceManager.getDefaultSharedPreferences(AcessarActivity.this);
+                log_user.setText(preferences.getString(Util.KEY_USER,"NAO EXISTE CHAVE"));
+
+
+                if (log_user.getText().toString().matches( preferences.getString(Util.KEY_USER,"")) && log_senha.getText().toString().matches( preferences.getString(Util.KEY_SENHA,"")) ) {
                     Intent it = new Intent(AcessarActivity.this, mainActivity.class);
                     startActivity(it);
                 }
